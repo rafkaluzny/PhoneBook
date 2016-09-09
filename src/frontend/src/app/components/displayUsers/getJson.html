@@ -1,0 +1,11 @@
+ <div class="row">
+    <div class="col-sm-6 col-md-4"  ng-repeat="user in vm.data| orderBy:'lastName'" style="text-align:center">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>{{ user.firstName+' '+user.lastName}}</h3>
+          <p>{{ user.address }}</p>
+          <h2>{{ user.number }}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
